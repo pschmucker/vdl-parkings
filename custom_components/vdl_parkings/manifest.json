@@ -1,0 +1,11 @@
+{
+  "domain": "vdl_parkings",
+  "name": "VDL Parkings",
+  "version": "0.1.0",
+  "documentation": "https://github.com/pschmucker/vdl_parkings",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@pschmucker"],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}

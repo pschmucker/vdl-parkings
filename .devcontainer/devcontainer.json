@@ -1,0 +1,22 @@
+{
+    "name": "Home Assistant dev",
+    "dockerComposeFile": "compose.yaml",
+    "service": "home-assistant",
+    "remoteUser": "root",
+    "workspaceFolder": "/config",
+    "mounts": [
+        "source=${localWorkspaceFolder}/custom_components,target=/config/custom_components,type=bind,consistency=cached"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.pylint",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.analysis.extraPaths": ["/usr/src/homeassistant"]
+            }
+        }
+    }
+}

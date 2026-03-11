@@ -1,0 +1,43 @@
+{
+  "title": "VDL Parkings",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select parkings to monitor",
+        "data": {
+          "parkings": "Parkings"
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Cannot connect to VDL API"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "out_of_service": {
+        "name": "Out of service"
+      },
+      "full": {
+        "name": "Full"
+      },
+      "open": {
+        "name": "Open"
+      }
+    },
+    "sensor": {
+      "total_capacity": {
+        "name": "Total capacity"
+      },
+      "available_spaces": {
+        "name": "Available spaces"
+      },
+      "occupied_spaces": {
+        "name": "Occupied spaces"
+      },
+      "occupancy_rate": {
+        "name": "Occupancy rate"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+services:
+  home-assistant:
+    image: homeassistant/home-assistant:2026.3.1
+    container_name: home-assistant
+    restart: unless-stopped
+    ports:
+      - 8123:8123
+    volumes:
+      - home-assistant-config:/config
+    environment:
+      - TZ=Europe/Paris
+
+
+volumes:
+  home-assistant-config:
+    name: home-assistant-config
+
+
+networks:
+  default:
+    name: home-assistant
